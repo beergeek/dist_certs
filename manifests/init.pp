@@ -37,7 +37,10 @@
 #
 class dist_certs {
 
+  include dist_certs::postgresql_certs
   include dist_certs::console_certs
   include dist_certs::dashboard_certs
   include dist_certs::puppetdb_certs
+
+  Class['dist_certs::postgresql_cert'] -> Class['dist_certs::console_certs'] -> Class['dist_certs::dashboard_certs'] -> Class['dist_certs::puppetdb_certs']
 }
