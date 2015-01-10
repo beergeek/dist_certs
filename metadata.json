@@ -1,0 +1,14 @@
+{
+  "name": "beergeek-dist_certs",
+  "version": "0.1.0",
+  "author": "beergeek",
+  "summary": "After rebuild of Master and restore of SSL direcctory this modules distributes the required keys and certs.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/beergeek/dist_certs.git",
+  "project_page": "https://github.com/beergeek/dist_certs",
+  "issues_url": "https://github.com/beergeek/dist_certs/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
